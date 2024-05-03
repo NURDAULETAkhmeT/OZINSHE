@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#EAD1FD"
+    tools:context=".SplashScreenFragment">
+
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:background="@drawable/shape3_splash_screen"
+        android:rotation="77"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-265dp"
+        tools:layout_editor_absoluteY="60dp"></FrameLayout>
+            <FrameLayout
+        android:layout_width="570dp"
+        android:layout_height="600dp"
+        android:background="@drawable/shape2_splash_screen"
+        android:rotation="32"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-125dp"
+        tools:layout_editor_absoluteY="159dp"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="1140dp"
+        android:layout_height="600dp"
+        android:background="@drawable/shape1_splash_screen"
+        android:rotation="81"
+        tools:layout_editor_absoluteX="-445dp"
+        tools:layout_editor_absoluteY="565dp"
+        tools:ignore="MissingConstraints" ></FrameLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/union_splash_screen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

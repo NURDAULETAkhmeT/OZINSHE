@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundFon"
+    tools:context=".UpdateProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="44dp"
+        android:id="@+id/profile_main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/profile_text_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="@string/updateTextGlav"
+            style="@style/OsnovnoiText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/update_exit_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:background="#00FFFFFF"
+            style="@style/BackLeftOutline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profile_text_profile"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9CA3AF"
+        app:layout_constraintTop_toBottomOf="@id/profile_main_linear" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/updateTextName"
+                android:textColor="#9CA3AF"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_display_bold"/>
+
+            <EditText
+                android:id="@+id/editTextText2"
+                style="@style/OsnovnoiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="16dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9CA3AF"
+            app:layout_constraintTop_toBottomOf="@id/linear1" />
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#9CA3AF"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_display_bold"/>
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress2"
+                style="@style/OsnovnoiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textSize="16dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9CA3AF"
+            app:layout_constraintTop_toBottomOf="@id/linear2" />
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/updateTextTelefon"
+                android:textColor="#9CA3AF"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_display_bold"/>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                style="@style/OsnovnoiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textSize="16dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9CA3AF"
+            app:layout_constraintTop_toBottomOf="@id/linear3" />
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/updateTextTulganKun"
+                android:textColor="#9CA3AF"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_display_bold"/>
+
+            <TextView
+                android:id="@+id/editTextDate"
+                style="@style/OsnovnoiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textSize="16dp"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9CA3AF"
+            app:layout_constraintTop_toBottomOf="@id/linear4" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/vhod_button_kiru"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/shape_button_nove"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="@string/updateTextTulganButtom"
+            android:layout_marginBottom="42dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

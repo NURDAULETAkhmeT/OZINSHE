@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundFon"
+    tools:context=".Main.HomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    style="@style/HomeLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0304414003044" />
+
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/ShimmerLayoutGlav"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/RcView_Home_Glavnoe"
+                    app:layout_constraintEnd_toEndOf="@+id/RcView_Home_Glavnoe"
+                    app:layout_constraintStart_toStartOf="@+id/RcView_Home_Glavnoe"
+                    app:layout_constraintTop_toTopOf="@+id/RcView_Home_Glavnoe"
+                    app:shimmer_duration="800">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/dizaine_home_glavnoe_move_shimmer"/>
+                        <include layout="@layout/dizaine_home_glavnoe_move_shimmer"/>
+
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcView_Home_Glavnoe"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                <TextView
+                    android:id="@+id/Home_TextView_Trendegiler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/OsnovnoiText"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/home_trend_textGlav"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/RcView_Home_Glavnoe" />
+
+                <TextView
+                    android:id="@+id/buttom_Home_TextView_Trendegiler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B376F7"
+                    android:text="Барлығы"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Home_TextView_Trendegiler"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/Home_TextView_Trendegiler" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/homeShimmerLauout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/RcView_Home_Trendegiler"
+                    app:layout_constraintEnd_toEndOf="@+id/RcView_Home_Trendegiler"
+                    app:layout_constraintStart_toStartOf="@+id/RcView_Home_Trendegiler"
+                    app:layout_constraintTop_toTopOf="@+id/RcView_Home_Trendegiler"
+                    app:shimmer_duration="800">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="224dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcView_Home_Trendegiler"
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Home_TextView_Trendegiler" />
+
+                <TextView
+                    android:id="@+id/Home_TextView_sagan_arnalgan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/OsnovnoiText"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:layout_marginTop="32dp"
+                    android:textSize="16sp"
+                    android:text="@string/home_sizge_textGlav"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/RcView_Home_Trendegiler" />
+
+                <TextView
+                    android:id="@+id/button_Home_TextView_sagan_arnalgan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B376F7"
+                    android:text="Барлығы"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Home_TextView_sagan_arnalgan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/Home_TextView_sagan_arnalgan" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/homeShimmerLauoutSagan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/RcView_Home_sagan_arnalgan"
+                    app:layout_constraintEnd_toEndOf="@+id/RcView_Home_sagan_arnalgan"
+                    app:layout_constraintStart_toStartOf="@+id/RcView_Home_sagan_arnalgan"
+                    app:layout_constraintTop_toTopOf="@+id/RcView_Home_sagan_arnalgan"
+                    app:shimmer_duration="800">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="224dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+                        <include layout="@layout/dizaine_home_main_movies_shimmer"/>
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcView_Home_sagan_arnalgan"
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Home_TextView_sagan_arnalgan" />
+
+                <TextView
+                    android:id="@+id/Home_TextView_Janr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/OsnovnoiText"
+                    android:layout_marginTop="32dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="@string/home_janr_home_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/RcView_Home_sagan_arnalgan" />
+
+                <TextView
+                    android:id="@+id/button_Home_TextView_Janr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B376F7"
+                    android:text="Барлығы"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Home_TextView_Janr"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/Home_TextView_Janr" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcView_Home_Janr"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/Home_TextView_Janr" />
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/Home_TextView_Jana_jobalar"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="32dp"-->
+                <!--                android:textColor="#111827"-->
+                <!--                android:textSize="16sp"-->
+                <!--                android:text="Жаңа жобалар"-->
+                <!--                android:fontFamily="@font/sf_pro_display_bold"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toBottomOf="@id/RcView_Home_Janr" />-->
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:id="@+id/RcView_Home_Jana_jobalar"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="224dp"-->
+                <!--                android:layout_marginTop="16dp"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                app:layout_constraintTop_toBottomOf="@id/Home_TextView_Jana_jobalar" />-->
+                <TextView
+                    android:id="@+id/Home_TextView_Reality_shou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    style="@style/OsnovnoiText"
+                    android:text="@string/search_multserial"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/RcView_Home_Janr" />
+
+                <TextView
+                    android:id="@+id/button_Home_TextView_Reality_shou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B376F7"
+                    android:text="Барлығы"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Home_TextView_Reality_shou"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/Home_TextView_Reality_shou" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcView_Home_Reality_shou"
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/Home_TextView_Reality_shou" />
+                <TextView
+                    android:id="@+id/Home_TextView_Telehikaya"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/search_sitkom"
+                    style="@style/OsnovnoiText"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/RcView_Home_Reality_shou" />
+
+                <TextView
+                    android:id="@+id/button_Home_TextView_Telehikaya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B376F7"
+                    android:text="Барлығы"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Home_TextView_Telehikaya"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/Home_TextView_Telehikaya" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcView_Home_Telehikaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/Home_TextView_Telehikaya" />
+                <TextView
+                    android:id="@+id/Home_TextView_Got"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/home_age_text"
+                    style="@style/OsnovnoiText"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/RcView_Home_Telehikaya" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B376F7"
+                    android:text="Барлығы"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_display_semibold"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Home_TextView_Got"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/Home_TextView_Got" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RcView_Home_Got"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Home_TextView_Got" />
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/Home_TextView_Derekti"-->
+                <!--                android:layout_width="163dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="32dp"-->
+                <!--                android:textColor="#111827"-->
+                <!--                android:textSize="16sp"-->
+                <!--                android:text="Деректі фильм"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toBottomOf="@id/RcView_Home_Got" />-->
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:id="@+id/RcView_Home_Derekti"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="224dp"-->
+                <!--                android:layout_marginTop="16dp"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toBottomOf="@id/Home_TextView_Derekti" />-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/Home_TextView_Shetel"-->
+                <!--                android:layout_width="163dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="32dp"-->
+                <!--                android:text="Шетел фильмдері"-->
+                <!--                android:textColor="#111827"-->
+                <!--                android:textSize="16sp"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toBottomOf="@id/RcView_Home_Derekti" />-->
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:id="@+id/RcView_Home_Shetel"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="224dp"-->
+                <!--                android:layout_marginTop="16dp"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toBottomOf="@id/Home_TextView_Shetel" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</FrameLayout>

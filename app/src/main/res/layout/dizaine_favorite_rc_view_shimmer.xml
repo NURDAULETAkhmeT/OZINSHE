@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="152dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView5"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            style="@style/ItemFon"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedCorners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageShimmerViewTextGlav"
+            android:src="@drawable/image_fon"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedCorners10"
+            android:layout_width="148dp"
+            android:layout_marginStart="17dp"
+            android:layout_height="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageShimmerViewTextLinear"
+            android:src="@drawable/image_fon"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedCornersD"
+            android:layout_width="186dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/imageView5"
+            app:layout_constraintTop_toBottomOf="@id/imageShimmerViewTextGlav" />
+
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_button_favorite"
+            android:layout_marginStart="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_filled"
+                android:layout_marginStart="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Қарау"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp"
+                android:textColor="#9753F0"
+                android:fontFamily="@font/sf_pro_display_bold"/>
+
+        </LinearLayout>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9CA3AF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    style="@style/BackgroundFon"
+    android:layout_height="match_parent"
+    tools:context=".ViewPager.Onboarding8Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayoutOnbarding9"
+        android:layout_width="match_parent"
+        android:layout_height="504dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="504dp"
+            android:contentDescription="Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/onbarding9"
+            tools:ignore="HardcodedText,ImageContrastCheck" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/ViewOnbarding"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/onbarding9TextView"
+        style="@style/OsnovnoiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/onbarding_glav_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ConstraintLayoutOnbarding9"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        style="@style/DescriptionOnbarding"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:layout_marginHorizontal="60dp"
+        android:text="@string/onbarding9_description"
+        app:layout_constraintTop_toBottomOf="@id/onbarding9TextView"
+        tools:ignore="HardcodedText" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="128dp"
+    android:paddingEnd="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="224dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageHomeMovies"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_fon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedCorners" />
+
+    <TextView
+        android:id="@+id/TextHomeMoviesBold"
+        style="@style/OsnovnoiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sf_pro_display_semibold"
+        android:text="Суперкөлік Самұрық"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageHomeMovies" />
+
+    <TextView
+        android:id="@+id/TextHomeMoviesRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:text="Мультсериал"
+        android:textColor="#9CA3AF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextHomeMoviesBold" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

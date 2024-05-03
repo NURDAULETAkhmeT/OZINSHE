@@ -1,0 +1,128 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OZINSHE" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/mitem name="cornerFamily">rounded</item>y_light_primary</item> -->
+    </style>
+
+    <style name="Theme.OZINSHE" parent="Base.Theme.OZINSHE" />
+    <style name="BottomNavigationView.Active" parent="@style/CardView">
+    </style>
+
+    <style name="roundedCorners">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="roundedCornersD">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">7dp</item>
+    </style>
+
+    <style name="roundedCorners10">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="BackgroundFon" parent="@style/CardView">
+        <item name="android:background">@color/colorOnbardingBackground</item>
+    </style>
+
+    <style name="OsnovnoiText" parent="@style/CardView">
+        <item name="color">@color/OsnovnoiText</item>
+    </style>
+
+    <style name="DescriptionOnbarding" parent="@style/CardView">
+        <item name="color">@color/descriptionOnbarding</item>
+    </style>
+
+    <style name="ProfileTextButton" parent="@style/CardView">
+        <item name="color">@color/profileTextButton</item>
+    </style>
+
+    <style name="BackgroundProfile" parent="@style/CardView">
+        <item name="color">@color/ProfileBackground</item>
+    </style>
+
+    <style name="BackgroundProfile2" parent="@style/CardView">
+        <item name="color">@color/ProfileBackground2</item>
+    </style>
+
+    <style name="ViewOnbarding">
+        <item name="android:background">@drawable/gradient_overlay</item>
+    </style>
+
+    <style name="BackLeftOutline">
+        <item name="android:src">@drawable/back_left_outline</item>
+    </style>
+
+    <style name="ShapeVhod">
+        <item name="android:background">@drawable/shape_vhod</item>
+    </style>
+
+    <style name="DescriptionVhod">
+        <item name="color">@color/descriptionVhod</item>
+    </style>
+
+    <style name="HomeLogo">
+        <item name="android:src">@drawable/home_logo</item>
+    </style>
+
+    <style name="SearchButton">
+        <item name="android:background">@drawable/shape_search_button</item>
+        <item name="android:textColor">@color/favoriteText</item>
+    </style>
+
+    <style name="SearchFavorite">
+        <item name="android:src">@drawable/search</item>
+    </style>
+
+    <style name="DeteilDescriptionText">
+        <item name="color">@color/detailDescriptionText</item>
+    </style>
+
+    <style name="SeriesSezonBackground">
+        <item name="android:background">@drawable/shape_series_sezon_false</item>
+    </style>
+
+    <style name="FavoriteTextDark">
+        <item name="color">@color/favoriteText</item>
+    </style>
+
+    <style name="BackgroundViewDetail">
+        <item name="android:background">@drawable/shape_detail_view</item>
+    </style>
+
+    <style name="ItemFon">
+        <item name="android:src">@drawable/image_fon</item>
+    </style>
+
+    <style name="ItemFonBack">
+        <item name="android:background">#C2C2C2</item>
+    </style>
+
+    <style name="ItemFonFull">
+        <item name="android:src">@drawable/image_fon_shimmer</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">40dp</item>
+        <item name="android:height">40dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.Material3.ChipMe</item>
+        <item name="android:color">#F8EEFF</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Material3.ChipMe" parent="">
+        <item name="cornerSize">12sp</item>
+    </style>
+
+    <style name="MenuColorback">
+        <item name="android:background">@color/descriptionVhodDark</item>
+    </style>
+
+    <style name="ViewFonBack">
+        <item name="android:background">@color/colorViewBackground</item>
+    </style>
+
+
+</resources>

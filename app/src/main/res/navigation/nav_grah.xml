@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grah"
+    app:startDestination="@id/splashScreenFragment2">
+
+    <fragment
+        android:id="@+id/splashScreenFragment2"
+        android:name="com.example.ozinshe.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment2_to_viewPager2Fragment"
+            app:destination="@id/viewPager2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.ozinshe.Main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_sanattarFragment"
+            app:destination="@id/sanattarFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_sanattarFragment2"
+            app:destination="@id/sanattarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPager2Fragment"
+        android:name="com.example.ozinshe.ViewPager.ViewPager2Fragment"
+        android:label="fragment_view_pager2"
+        tools:layout="@layout/fragment_view_pager2" >
+        <action
+            android:id="@+id/action_viewPager2Fragment_to_vhodFragment"
+            app:destination="@id/vhodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vhodFragment"
+        android:name="com.example.ozinshe.VhodFragment"
+        android:label="fragment_vhod"
+        tools:layout="@layout/fragment_vhod"/>
+    <fragment
+        android:id="@+id/regestraciaFragment"
+        android:name="com.example.ozinshe.RegestraciaFragment"
+        android:label="fragment_regestracia"
+        tools:layout="@layout/fragment_regestracia" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.ozinshe.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_viewPager2Fragment"
+            app:destination="@id/viewPager2Fragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_updateProfileFragment"
+            app:destination="@id/updateProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment2"
+        android:name="com.example.ozinshe.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment2_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.example.ozinshe.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment2_to_sanattarFragment"
+            app:destination="@id/sanattarFragment" />
+        <action
+            android:id="@+id/action_searchFragment2_to_sanattarFragment2"
+            app:destination="@id/sanattarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.ozinshe.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.example.ozinshe.SeriesFragment"
+        android:label="fragment_series"
+        tools:layout="@layout/fragment_series" >
+        <action
+            android:id="@+id/action_seriesFragment_to_youTubePlayerFragment"
+            app:destination="@id/youTubePlayerFragment" >
+
+            <argument
+                android:name="videoUrl"
+                app:argType="string" />
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/youTubePlayerFragment"
+        android:name="com.example.ozinshe.YouTubePlayerFragment"
+        android:label="YouTubePlayerFragment" >
+        <action
+            android:id="@+id/action_youTubePlayerFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+        <argument
+            android:name="videoUrl"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/sanattarFragment"
+        android:name="com.example.ozinshe.SanattarFragment"
+        android:label="fragment_sanattar"
+        tools:layout="@layout/fragment_sanattar" >
+        <action
+            android:id="@+id/action_sanattarFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.example.ozinshe.UpdateProfileFragment"
+        android:label="fragment_update_profile"
+        tools:layout="@layout/fragment_update_profile" />
+</navigation>

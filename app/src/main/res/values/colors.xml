@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="glavekran">#FFF</color>
+    <color name="sini">#7E2DFC</color>
+    <color name="yourBackgroundColor">#F8EEFF</color>
+    <color name="sezonTrue">#9753F0</color>
+    <color name="sezonFalse">#F3F4F6</color>
+    <color name="colorVideo">#7E2DFC</color>
+
+    <color name="colorOnbardingBackground">#FFFFFF</color>
+    <color name="colorOnbardingBackgroundDark">#111827</color>
+
+    <color name="OsnovnoiText">#111827</color>
+    <color name="OsnovnoiTextDark">#FFFFFF</color>
+
+    <color name="descriptionOnbarding">#6B7280</color>
+    <color name="descriptionOnbardingDark">#9CA3AF</color>
+
+    <color name="profileTextButton">#1C2431</color>
+    <color name="profileTextButtonDark">#E5E7EB</color>
+
+    <color name="ProfileBackground">#FFFFFF</color>
+    <color name="ProfileBackgroundDark">#1C2431</color>
+
+    <color name="ProfileBackground2">#F9FAFB</color>
+    <color name="ProfileBackgroundDark2">#111827</color>
+
+    <color name="descriptionVhod">#6B7280</color>
+    <color name="descriptionVhodDark">#FFFFFF</color>
+
+    <color name="favoriteText">#374151</color>
+    <color name="favoriteTextDark">#F9FAFB</color>
+
+    <color name="detailDescriptionText">#9CA3AF</color>
+    <color name="detailDescriptionTextDark">#E5E7EB</color>
+
+    <color name="colorViewBackground">#D1D5DB</color>
+    <color name="colorViewBackgroundDark">#1C2431</color>
+</resources>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">OZINSHE</string>
+    <string name="onbarding8_description">Фильмдер, телехикаялар, ситкомдар, анимациялық жобалар, телебағдарламалар мен реалити-шоулар, аниме және тағы басқалары</string>
+    <string name="onbarding_glav_text">ÖZINŞE-ге қош келдің!</string>
+    <string name="onbarding9_description">Кез келген құрылғыдан қара Сүйікті фильміңді  қосымша төлемсіз телефоннан, планшеттен, ноутбуктан қара</string>
+    <string name="onbarding10_description">Тіркелу оңай. Қазір тіркел де қалаған фильміңе қол жеткіз</string>
+
+    <string name="onbarding10_button">Әрі қарай</string>
+
+    <string name="vhod_salem">Сәлем</string>
+    <string name="vhod_akk_kiru">Аккаунтқа кіріңіз</string>
+    <string name="vhod_emaill_tint">Сіздің email</string>
+    <string name="vhod_password_text">Құпия сөз</string>
+    <string name="vhod_password_tint">Сіздің құпия сөзіңіз</string>
+    <string name="vhod_vos_password">Құпия сөзді ұмыттыңыз ба?</string>
+    <string name="vhod_button_kiru">Кіру</string>
+    <string name="vhod_vopros_regis">Аккаунтыныз жоқ па?</string>
+    <string name="vhod_regis_button">Тіркелу</string>
+
+    <string name="regis_glav_description">Деректерді толтырыңыз</string>
+    <string name="regis_password_pavtor">Құпия сөзді қайталаңыз</string>
+    <string name="regis_vhod_text">Сізде аккаунт бар ма?</string>
+
+
+    <string name="home_trend_text">Трендтегілер</string>
+    <string name="home_trend_textGlav">ÖZINŞE–де танымал</string>
+    <string name="home_sizge_text">Сізге арналған фильмдер</string>
+    <string name="home_sizge_textGlav">Телехикаялар</string>
+    <string name="home_janr_home_text">Жанрды таңдаңыз</string>
+    <string name="home_reality_text">Толықметрлі мультфильмдер</string>
+    <string name="home_age_text">Жасына сәйкес</string>
+    <string name="home_telehikaya">Телехикая</string>
+
+    <string name="search_glav_text">Іздеу</string>
+    <string name="search_sanattar_text">Санаттар</string>
+    <string name="search_telehikaya_button">Телехикая</string>
+    <string name="search_sitkom">Ситкомдар</string>
+    <string name="search_korkem_film">Көркем фильм</string>
+    <string name="search_mult">Мультфильм</string>
+    <string name="search_multserial">Мультсериалдар</string>
+    <string name="search_anime">Аниме</string>
+    <string name="search_derekti_film">Деректі фильм</string>
+    <string name="search_muzika">Музыка</string>
+    <string name="search_setel_film">Шетел фильмдері</string>
+
+    <string name="favorite_glav_text">Тізім</string>
+
+    <string name="profile_glav_text">Профиль</string>
+    <string name="profile_menin_profilm">Менің профилім</string>
+    <string name="profile_jeke_derek">Жеке деректер</string>
+    <string name="profile_jeke_button">Өңдеу</string>
+    <string name="profile_izmenit_password">Құпия сөзді өзгерту</string>
+    <string name="profile_yazik">Тіл</string>
+    <string name="profile_erejeler">Ережелер мен шарттар</string>
+    <string name="profile_habarlandiru">Хабарландырулар</string>
+    <string name="profile_karangi_rejim">Қараңғы режим</string>
+
+
+    <string name="detail_toligirak">Толығырақ</string>
+    <string name="detail_toligrak_jabu">Жабу</string>
+    <string name="detail_rejisser">Режиссер:</string>
+    <string name="detail_produser">Продюсер:</string>
+    <string name="detail_bolimder">Бөлімдер</string>
+    <string name="detail_scrinshots">Скриншоттар</string>
+    <string name="detail_uksas">Ұқсас телехикаялар</string>
+    <string name="detail_uksas_button">Барлығы</string>
+
+    <string name="series_glav_text">Бөлімдер</string>
+    <string name="series_sezon"> сезон</string>
+    <string name="series_series"> -ші бөлім</string>
+
+    <string name="updateTextGlav">Жеке деректер</string>
+    <string name="updateTextName">Сіздің атыңыз</string>
+    <string name="updateTextTelefon">Телефон</string>
+    <string name="updateTextTulganKun">Туылған күні</string>
+
+    <string name="updateTextTulganButtom">Өзгерістерді сақтау</string>
+</resources>
